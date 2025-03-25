@@ -1,0 +1,41 @@
+module tb_decoder_2to4;
+
+    // Testbench signals
+    logic [1:0] A;
+    logic [3:0] Y;
+
+    // Instantiate the DUT (Device Under Test)
+    decoder_2to4 dut (
+        .A(A),
+        .Y(Y)
+    );
+
+    // Test procedure
+    initial begin
+        $display("Starting test...");
+
+        // Test Case 1: A = 00
+        A = 2'b00; #10;
+        $display("A = %b -> Y = %b", A, Y);
+
+        // Test Case 2: A = 01
+        A = 2'b01; #10;
+        $display("A = %b -> Y = %b", A, Y);
+
+        // Test Case 3: A = 10
+        A = 2'b10; #10;
+        $display("A = %b -> Y = %b", A, Y);
+
+        // Test Case 4: A = 11
+        A = 2'b11; #10;
+        $display("A = %b -> Y = %b", A, Y);
+
+        // Test Case 5: Invalid Input (just for checking default case)
+        A = 2'bxx; #10;
+        $display("A = %b -> Y = %b", A, Y);
+
+        $display("Test completed.");
+        $stop;
+    end
+
+endmodule

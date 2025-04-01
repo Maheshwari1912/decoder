@@ -1,5 +1,5 @@
 # decoder
-🎯 Introduction
+**🎯 Introduction**
 
 A Decoder is a combinational circuit that converts binary input data into a one-hot output representation. For an n-bit input, a decoder generates 2^n unique output lines.
 
@@ -8,7 +8,7 @@ A Hierarchical Decoder is a more efficient design where larger decoders are buil
 
 ![image](https://github.com/user-attachments/assets/34431b5e-4b66-49d4-95d4-a19e830bb40e)
 
-✅ Advantages of a Decoder
+**Advantages of a Decoder**
 Simple Binary to Output Conversion:
 
 Easily converts binary inputs into unique, recognizable output lines.
@@ -29,7 +29,7 @@ Fast Operation:
 
 Combinational logic ensures quick output response to input changes.
 
-🔥 Applications of a Decoder
+**Applications of a Decoder**
 Memory Address Decoding:
 
 Used in RAM/ROM to select memory locations based on binary addresses.
